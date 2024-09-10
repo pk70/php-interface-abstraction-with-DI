@@ -7,7 +7,7 @@ class SendToEmailAndSms implements SendInterface
 {
   private $sendEmail;
   private $sendSms;
-  //dependency injection in contructor for both
+  //dependency injection in constructor for both
   public function __construct(SendToEmail $sendToEmail, SendToSms $sendToSms)
   {
     $this->sendEmail = $sendToEmail;
